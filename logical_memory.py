@@ -18,7 +18,7 @@ price1 = 10
 
 price2 = 10
 
-print(f"the vriable name has a value of {name} and is saved at {id(age)}")
+print(f"the vriable name has a value of {name} and is saved at {id(name)}")
 
 print(f"the vriable age has a value of {age} and is saved at {id(age)}")
 
