@@ -28,7 +28,7 @@ print(f"the average is {int (average)}")
 
 # CONVERT THE DATA TYPE
 
-price = float(input("how much did the item cost")
+price = float(input("how much did the item cost"))
 tax = 0.0485
 sale_tax = price * tax
 total = price + sale_tax
