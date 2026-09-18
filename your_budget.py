@@ -34,6 +34,7 @@ while True:
         break
     except:
         print("please enter a valid number for your month;y transportantion")
+        
 
 print(f"your rent is ${rent:.2f} and that is {int(rent/Income*100)}")
 
@@ -43,4 +44,7 @@ print(f"your groceries is ${groceries:.2f} and that is {int(groceries/Income*100
 
 print(f"your transprotions is ${transprotions:.2f} and that is {int(transprotions/Income*100)}")
 
-print(f"you should save ")
+saving = Income * 0.10
+print(f"you should save ${saving} and thats 10% of your income")
+spending_money = Income - rent - utilities - groceries - transportation - saving 
+print(f"${spending_money} is your spening money")
