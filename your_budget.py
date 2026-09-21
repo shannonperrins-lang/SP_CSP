@@ -45,5 +45,5 @@ print(f"your transprotions is ${transprotions:.2f} and that is {int(transprotion
 
 saving = Income * 0.10
 print(f"you should save ${saving} and thats 10% of your income")
-spending_money = Income - rent - utilities - groceries - transportation - saving 
+spending_money = Income - rent - utilities - groceries - transprotions - saving 
 print(f"${spending_money} is your spening money")
