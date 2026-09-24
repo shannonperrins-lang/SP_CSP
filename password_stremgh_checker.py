@@ -1,46 +1,55 @@
 #SP password strength checker
 
-characters = False
-uppercase = False
-lowercase = False
+upper = False
+lower = False
 numbers = False
 sybmol = False
 length = False 
 strength = 0
+strengthstring = "null"
 password = input("what's your password?:")
 
 if len(password)>=8:
-    length = True
-print(len(password))
+    len = True
 
 for letter in password:
     if letter.isupper():
-        uppercase = True
+        upper = True
 
-    if letter.ischaracters():
-        characters = True
-
-    if letter.islowercase():
+    if letter.islower():
         lower = True
 
-    if letter.isnumbers():
+    if letter.isnumeric():
         numbers= True
 
     if letter in "!@#$%^&*()":
         sybmol = True
 
-    if characters ==True:
-        strength += 1
-    if uppercase == True:
-        strength += 2
-    if lowercase == True:
-        strength += 3
-    if numbers == True:
-        strength += 4
-    if sybmol == True:
-        strength += 5
-    if length == True:
-        strength += 6
-    if strength == 5:
-        strength = "strong" 
-    if strength == <3 and >5:
+if upper == True:
+    strength += 1
+if lower == True:
+    strength += 1
+if numbers == True:
+    strength += 1
+if sybmol == True:
+    strength += 1
+if length == True:
+    strength += 1
+if strength >= 5:
+    strength = "strong" 
+if strength <=3 and strength <= 5:
+    Strength = "medium"
+if strength <=2 and strength <= 0:
+	Strength = "weak" 
+print(f"at least 8 characters:" , length )
+print(f"has an upper letter:" ,upper)
+print(f"has a lowercase letter:" ,lower)
+print(f"has a number:", numbers)
+print(f"has a sybmol:", sybmol)
+if strength >= 5:
+    strengthstring = "strong"
+elif strength >= 3 and strength <=4:
+    strengthstring = "medium"
+else:
+    strengthstring = "weak"
+print("your password strength is", strengthstring)
