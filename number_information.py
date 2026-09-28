@@ -1,5 +1,8 @@
 #SP number information
 
 for num in range (1,21):
-    if num % 2 == 0:
-        print(f"")
+    print(num)
+    if num % 5 == 0:
+        print("not divisable by 5")
+    else:
+        print("divisable by 5")
