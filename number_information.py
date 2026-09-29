@@ -6,8 +6,6 @@ for num in range (1,21):
         print(number,"is even")
     else:
         print(number,"is odd")
-for num in range (1,21):
-    print(num)
     if num % 5 == 0:
         print(number,"is divisible by 5")
     else:
