@@ -1,13 +1,13 @@
 #SP number information
 
-for num in range (1,21):
+for number in range (1,21):
     if number % 2 == 0:
         if number % 5 == 0:
             print(f"{number}is even and is divisible by 5")
         else:
-        print(f"{number}is odd and not divisble by 5")
+        print(f"{number}is even and not divisble by 5")
     else:
-        if num % 5 == 0:
+        if number % 5 == 0:
             print(f"{number} is odd and is divisible by 5")
-    else:
+        else:
             print(f"{number} is odd and is not divisible by 5")
