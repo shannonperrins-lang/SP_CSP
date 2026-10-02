@@ -2,9 +2,9 @@
 
 #create a list of 10 words on a sperate txt of file
 
-#create another file holds win/loos counts 0,0
+#create another file holds win/loss counts 0,0
 
-# read your files use spilt (",") on the content of the words txt docu,ent to create your list of words 
+# read your files use spilt (",") on the content of the words txt document to create your list of words 
 
 #pull win and lose totals from the other txt file and save them as 2 separate veriables 
 
