@@ -5,14 +5,14 @@ shift = int(input("how many times would you like the shift your message?:").stri
 
 def ceasar_shift(sentence_shift):
      the_result = ""
-     for char on sentence:
+     for char in sentence:
           if char.isupper():
-               the_result += (
-                    chr(ord(char) - ord("A") + shift (% 26) + ord("A"))
+               the_result += char
+               chr(ord(char) - ord("A") + shift + ord("A") % 26)
           elif char.islower():
-               the_result += (
-                    chr(ord(char) - ord("a") + shift (% 26) + ord("a"))
-          else:
+               the_result += char
+               chr(ord(char) - ord("a") + shift + ord("a") % 26)
+     else:
              the_result += char
      return the_result
 
@@ -22,4 +22,4 @@ if letter == "D":
 
 elif letter == "E":
     the_result = ceasar_shift(sentence,-shift)
-     print(f"your encryted message is: {the_result}")
+print(f"your encryted message is: {the_result}")
