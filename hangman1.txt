@@ -1,4 +1,4 @@
-jazz, crypt, phlegm, awkward, oxygen, quartz, sphinx, galaxy, subway, zombie
+words = input("jazz, crypt, phlegm, awkward, oxygen, quartz, sphinx, galaxy, subway, zombie")
 
 loss = 0
 wins = 0 
