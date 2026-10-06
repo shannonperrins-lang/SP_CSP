@@ -13,8 +13,8 @@ result = play.round()
 with open ("hangman2.txt","r+") as file: 
   content = file.read().split(",")
 
-wins = input(".readline(1)")
-losses = (".readline(2)")
+wins = int(lines[0].strip()) if lines else 0,
+losses = int(lines[1].strip()) if len(lines) > 1 else 0,
 
 print("welcome to hangman!!") 
 print("_" * len(word))
